@@ -93,15 +93,15 @@
 		function unmuteAudioOnInteraction() {
 			const audio = document.getElementById('background-audio');
 			if (audio) {
-				if(audio.muted) {
-					audio.muted = false; // Unmute the audio
-				}
-				else
-				{
-					audio.muted = true; // Mute the audio
-				}
+				// if(audio.muted) {
+				// 	audio.muted = false; // Unmute the audio
+				// }
+				// else
+				// {
+				// 	audio.muted = true; // Mute the audio
+				// }
 
-				// audio.muted = false; // Unmute the audio
+				audio.muted = false; // Unmute the audio
 				audio.play().catch((error) => {
 					console.error('Audio playback failed:', error);
 				}); // Ensure the audio starts playing
