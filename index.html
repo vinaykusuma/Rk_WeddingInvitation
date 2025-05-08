@@ -83,39 +83,34 @@
 			audio.muted = false;
 		}
 	</script> -->
-	<audio id="background-audio" autoplay loop muted>
+
+	
+	<!-- <audio id="background-audio" autoplay loop muted>
 		<source src="audio/background-music.mp3" type="audio/mpeg">
 		Your browser does not support the audio element.
 	</audio>
 	
 	<script>
-		// Function to unmute and play the audio
+
 		function unmuteAudioOnInteraction() {
 			const audio = document.getElementById('background-audio');
 			if (audio) {
-				// if(audio.muted) {
-				// 	audio.muted = false; // Unmute the audio
-				// }
-				// else
-				// {
-				// 	audio.muted = true; // Mute the audio
-				// }
-
+		
 				audio.muted = false; // Unmute the audio
 				audio.play().catch((error) => {
 					console.error('Audio playback failed:', error);
-				}); // Ensure the audio starts playing
+				}); 
 			}
 			
 		}
 	
-		// Add global event listeners for user interaction
+	
 		document.addEventListener('click', unmuteAudioOnInteraction); // For desktop clicks
 		document.addEventListener('touchstart', unmuteAudioOnInteraction); // For mobile touch
 		document.addEventListener('scroll', unmuteAudioOnInteraction); // For scrolling
 		document.addEventListener('mousemove', unmuteAudioOnInteraction); // For mouse movement
 	</script>
-	
+	 -->
 
 	<!-- <audio id="background-audio" autoplay loop muted>
 		<source src="audio/background-music.mp3" type="audio/mpeg">
@@ -145,7 +140,9 @@
 	<nav class="fh5co-nav" role="navigation">
 		<div class="container">
 			<div class="row">
-	
+				<a href="#fh5co-event" class="scroll-down-link">
+					<i class="icon-arrow-down">Scroll down</i>
+				</a>
 				<div class="col-xs-10 text-right menu-1">
 					<ul>
 						<li class="active"><a href="index.html">Home</a></li>
@@ -155,7 +152,11 @@
 					</ul>
 				</div>
 			</div>
-			
+			<!-- <div class="scroll-down-indicator">
+				<a href="#fh5co-event" class="scroll-down-link">
+					<i class="icon-arrow-down"></i>
+				</a>
+			</div> -->
 		</div>
 	</nav>
 
@@ -176,13 +177,20 @@
 								<div class="clock clock-fix"></div>
 							  </div>
 							<p><a href="#fh5co-event" class="btn btn-default btn-sm">Save our date</a></p>
+							<!-- <br>
+							<br>
+							<div class="scroll-down-indicator">
+								<a href="#fh5co-event" class="scroll-down-link">
+									<i class="icon-arrow-down">Scroll down for Venue details</i>
+								</a>
+							</div> -->
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 	</header>
-
+	
 
 
 	<div id="fh5co-event" class="fh5co-bg">
