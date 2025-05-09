@@ -328,6 +328,20 @@
 		<a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a>
 	</div>
 
+	<script>
+		// Function to auto-scroll to the "Events" section after 5 seconds
+		function autoScrollToEvents() {
+			setTimeout(() => {
+				const eventsSection = document.querySelector('#fh5co-event');
+				if (eventsSection) {
+					eventsSection.scrollIntoView({ behavior: 'smooth' });
+				}
+			}, 5000); // 5000ms = 5 seconds
+		}
+	
+		// Call the function to start the auto-scroll
+		autoScrollToEvents();
+	</script>
 	<!-- jQuery -->
 	<script src="js/jquery.min.js"></script>
     <!-- clock -->
